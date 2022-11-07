@@ -1,5 +1,8 @@
 import copy
-from collections import Mapping
+try:
+    from collections.abc import Mapping
+except ImportError:
+    from collections import Mapping
 from functools import partial
 import six
 import os.path
